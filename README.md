@@ -1,6 +1,6 @@
 ## TeamFlow - Full-stack Chat Application
 
-  <img src="screenshot/main.gng" />
+  <img src="screenshot/main.png" />
 
 
 
