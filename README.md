@@ -1,73 +1,156 @@
-#  وب اپلیکیشن هوشمند TeamFlow
+#  TeamFlow - وب اپلیکیشن هوشمند چت تیمی (مشابه Slack اما قدرتمندتر)
 
 <p align="center">
-  <img src="screenshot/main.png" width="300"/>
-  <img src="screenshot/2.png" width="300"/>
+  <img src="screenshot/main.png" width="380" alt="صفحه اصلی TeamFlow"/>
+  <img src="screenshot/2.png" width="380" alt="ورکسپیس و سایدبار"/>
 </p>
 <p align="center">
-  <img src="screenshot/3.png" width="300"/>
-  <img src="screenshot/4.png" width="300"/>
+  <img src="screenshot/3.png" width="380" alt="چت بلادرنگ"/>
+  <img src="screenshot/4.png" width="380" alt="حالت دارک مود و UI مدرن"/>
 </p>
 <p align="center">
-  <img src="screenshot/5.png" width="300"/>
-  <img src="screenshot/6.png" width="300"/>
+  <img src="screenshot/5.png" width="380" alt="خلاصه‌سازی هوشمند مکالمه با DeepSeek"/>
+  <img src="screenshot/6.png" width="380" alt="پیشنهاد پاسخ هوشمند AI"/>
 </p>
-
 
 ## معرفی برنامه
 
-وب اپلیکیشن TeamFlow یک برنامه چت آنلاین فول استک است که به‌طور خاص برای **ارتباطات تیمی و شخصی بلادرنگ (Real-Time)** طراحی شده است. این اپلیکیشن با ترکیب فناوری‌های مدرن، تجربه‌ای سریع، امن و هوشمند مشابه Slack را برای کاربران فراهم می‌کند.
+<p align="justify">
+وب اپلیکیشن TeamFlow یک برنامه چت آنلاین فول استک است که به‌طور خاص برای ارتباطات تیمی و شخصی بلادرنگ (Real-Time طراحی شده است. این اپلیکیشن با ترکیب فناوری‌های مدرن، تجربه‌ای سریع، امن و هوشمند مشابه Slack را برای کاربران فراهم می‌کند. این پلتفرم با استفاده از OAuth2 برای احراز هویت، Zustand برای مدیریت استیت، و Socket.IO برای ارتباط بلادرنگ، تجربه‌ای پایدار، سریع و در عین حال سبک در ارتباطات کاربر به کاربر فراهم می‌کند. همچنین، با Dockerization کامل در بخش‌های Frontend، Backend، Database و WebSocket Server، استقرار و مقیاس‌پذیری سیستم به‌صورت یکپارچه و کارآمد انجام می‌شود. 
 
-این پلتفرم با استفاده از OAuth2 برای احراز هویت، Zustand برای مدیریت استیت، و Socket.IO برای ارتباط بلادرنگ، تجربه‌ای پایدار، سریع و در عین حال سبک در ارتباطات کاربر به کاربر فراهم می‌کند.
-همچنین، با Dockerization کامل در بخش‌های Frontend، Backend، Database و WebSocket Server، استقرار و مقیاس‌پذیری سیستم به‌صورت یکپارچه و کارآمد انجام می‌شود.
+### ویژگی هوشمند (AI Powered) ویژگی برجسته TeamFlow
+<p align="justify">
+یکپارچه‌سازی هوش مصنوعی DeepSeek است که قابلیت‌های زیر را ارائه می‌دهد و بهره‌وری ارتباطات تیمی را به شکل چشمگیری افزایش می‌دهد:خلاصه‌سازی مکالمات دریافت خلاصه مختصر از مکالمات طولانی. پیشنهاد پاسخ‌های هوشمند پیشنهاد پاسخ‌های مرتبط و متناسب با Context مکالمه.
 
-###  ویژگی هوشمند (AI Powered)
+## فناوری‌های استفاده شده
 
-ویژگی برجسته TeamFlow، یکپارچه‌سازی هوش مصنوعی **DeepSeek** است که قابلیت‌های زیر را ارائه می‌دهد و بهره‌وری ارتباطات تیمی را به شکل چشمگیری افزایش می‌دهد:
+### Frontend
+- Next.js 14 (App Router + Server Components)
+- TypeScript
+- Tailwind CSS
+- Zustand
+- Socket.IO Client
+- PWA Support
 
-* **خلاصه‌سازی مکالمات:** دریافت خلاصه مختصر از مکالمات طولانی.
-* **پیشنهاد پاسخ‌های هوشمند:** پیشنهاد پاسخ‌های مرتبط و متناسب با Context مکالمه.
+### Backend
+- Node.js + Express
+- TypeScript
+- MongoDB + Mongoose
+- Socket.IO
+- OAuth2 (JWT Access + Refresh Token)
+- DeepSeek AI API
 
----
+### DevOps
+- Docker + Docker Compose (Frontend, Backend, MongoDB, Socket Server)
+- ESLint + Prettier
+- محیط کاملاً Dockerized و آماده Production
 
-## معماری فنی
+##  ویژگی‌های کلیدی
 
-معماری TeamFlow بر اساس یک معماری مدرن و مجزا (Decoupled) بنا شده است:
+- ایجاد ورک‌اسپیس اختصاصی و کانال‌های متعدد
+- چت بلادرنگ (Real-Time) با Socket.IO
+- نمایش وضعیت آنلاین/آفلاین کاربران
+- احراز هویت امن با OAuth2 + Refresh Token
+- پشتیبانی کامل PWA (نصب روی موبایل و دسکتاپ)
+- حالت دارک/لایت اتوماتیک
+- مدیریت کامل اعضای ورک‌اسپیس و لینک دعوت
+- هوش مصنوعی DeepSeek:
+  - خلاصه‌سازی مکالمات طولانی
+  - پیشنهاد پاسخ‌های هوشمند بر اساس Context
 
-### بخش سمت سرور (Backend)
+## ساختار پروژه
 
-- **بک اند Node.js**: محیط اجرایی (Runtime) برای پردازش درخواست‌ها و اجرای منطق سمت سرور  
-- **کتابخانه Express**: فریم‌ورک سریع و مینیمال برای ساخت APIهای RESTful  
-- **دیتابیس MongoDB**: پایگاه داده‌ی NoSQL با ساختار انعطاف‌پذیر برای ذخیره داده‌ها  
-- **وب سوکت Socket.IO**: مدیریت ارتباطات بلادرنگ (Real-Time Communication) بین کلاینت و سرور  
-- **احراز هویت OAuth2**: سیستم احراز هویت امن با پشتیبانی از Access و Refresh Token  
-
----
-
-###  بخش سمت فرانت‌اند (Frontend)
-
-- **فرانت Next.js**: فریم‌ورک React با پشتیبانی از SSR و SSG برای بهبود عملکرد و سئو  
-- **کدنویسی با TypeScript**: افزودن تایپ استاتیک برای افزایش کیفیت و پایداری کد  
-- **کنترل وضعیت با Zustand**: ابزار سبک و سریع برای مدیریت استیت در برنامه‌های React  
-- **استایل Tailwind CSS**: فریم‌ورک CSS مدرن برای طراحی سریع و واکنش‌گرا  
-- **ارتباط Socket.IO**: ایجاد ارتباط بلادرنگ بین کاربران در سمت فرانت  
-
----
-
-## ویژگی‌های اصلی
-
-* ** ایجاد ورک اسپیس اختصاصی:** امکان ایجاد محیط کاری، تعریف کانال‌های مختلف و ارسال لینک دعوت.
-* ** چت آنلاین آنی:** ارسال و دریافت پیام‌ها به‌صورت بلادرنگ (Real-Time).
-* ** حالت آفلاین و آنلاین:** نمایش وضعیت لحظه‌ای آنلاین یا آفلاین کاربران.
-* ** مدیریت کاربران با OAuth2:** احراز هویت امن و مدیریت دسترسی‌ها.
-* ** مدیریت استیت با Zustand:** ذخیره‌سازی و به‌روزرسانی بهینه استیت‌های برنامه.
-* ** پشتیبانی از PWA:** نصب آسان اپلیکیشن بر روی دستگاه‌های موبایل و دسکتاپ.
-
----
-
-## قابلیت‌های هوشمند (DeepSeek AI)
-
-این ویژگی‌ها TeamFlow را به یک دستیار هوشمند تبدیل می‌کند:
-
-* **خلاصه‌سازی مکالمات** : فشرده‌سازی محتوای مکالمات طولانی با حفظ مفهوم اصلی. کاربردی برای کانال‌های پرترافیک. 
-* **پیشنهاد پاسخ‌های هوشمند** : تحلیل آخرین پیام و پیشنهاد پاسخ‌های متناسب با Context مکالمه.
+```tree
+TeamFlow/
+├── frontend/
+│   ├── .next/                 
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── manifest.json      
+│   │   └── icons/              
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── (auth)/
+│   │   │   │   ├── login/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── register/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── forget-password/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── layout.tsx
+│   │   │   ├── (workspace)/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── layout.tsx
+│   │   │   └── globals.css
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── CopyToClipboard.tsx
+│   │   │   │   ├── Portal.tsx
+│   │   │   │   ├── Modal.tsx
+│   │   │   │   └── Input.tsx
+│   │   │   ├── layout/
+│   │   │   │   ├── Sidebar.tsx
+│   │   │   │   └── ChatView.tsx
+│   │   │   ├── channel/
+│   │   │   │   └── CreateChannelModal.tsx
+│   │   │   ├── workspace/
+│   │   │   │   ├── CreateWorkspaceModal.tsx
+│   │   │   │   ├── WorkspaceMenu.tsx
+│   │   │   │   └── WorkspaceManager.tsx
+│   │   │   └── chat/
+│   │   │       ├── Message.tsx
+│   │   │       ├── MessageInput.tsx
+│   │   │       ├── MessageList.tsx
+│   │   │       └── AISuggestions.tsx
+│   │   ├── hooks/
+│   │   │   ├── useAuth.ts
+│   │   │   ├── useAIChatFeatures.ts
+│   │   │   └── useChatState.ts
+│   │   ├── services/
+│   │   │   ├── api.ts
+│   │   │   └── socket.ts
+│   │   ├── styles/
+│   │   │   └── globals.css
+│   │   └── types/
+│   │       └── index.ts
+│   ├── .eslintrc.json
+│   ├── next.config.js
+│   ├── package.json
+    └── tsconfig.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── db.ts
+│   │   ├── index.ts
+│   │   ├── controllers/
+│   │   │   ├── authController.ts
+│   │   │   ├── groupController.ts
+│   │   │   ├── userController.ts
+│   │   │   └── messageController.ts
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.ts
+│   │   │   └── errorMiddleware.ts
+│   │   ├── models/
+│   │   │   ├── User.ts
+│   │   │   ├── Group.ts
+│   │   │   ├── Channel.ts
+│   │   │   └── Message.ts
+│   │   ├── routes/
+│   │   │   ├── authRoutes.ts
+│   │   │   ├── groupRoutes.ts
+│   │   │   ├── userRoutes.ts
+│   │   │   ├── messageRoutes.ts
+│   │   │   └── index.ts
+│   │   ├── services/
+│   │   │   └── socketService.ts
+│   │   └── utils/
+│   │       └── generateToken.ts
+│   ├── .env
+│   ├── package.json
+│   └── server.ts
+│
+├── docker-compose.yml
+├── .gitignore
+├── .env.example
+└── README.md
