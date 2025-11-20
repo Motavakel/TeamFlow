@@ -131,6 +131,9 @@ TeamFlow/
 │   │   ├── middleware/
 │   │   │   ├── authMiddleware.ts
 │   │   │   └── errorMiddleware.ts
+│   │   ├── validators/
+|   |   |    ├── authValidator.ts
+|   |   |    └── messageValidator.ts
 │   │   ├── models/
 │   │   │   ├── User.ts
 │   │   │   ├── Group.ts
