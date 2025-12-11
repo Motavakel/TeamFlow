@@ -46,7 +46,6 @@
 ### DevOps
 - Docker + Docker Compose (Frontend, Backend, MongoDB, Socket Server)
 - ESLint + Prettier
-- محیط کاملاً Dockerized و آماده Production
 
 ##  ویژگی‌های کلیدی
 
