@@ -13,11 +13,27 @@
   <img src="screenshot/6.png" width="380" alt="پیشنهاد پاسخ هوشمند AI"/>
 </p>
 
+## Application Overview
+
+<p align="justify">
+TeamFlow is a full-stack online chat web application specifically designed for real-time team and personal communication. By combining modern technologies, it provides users with a fast, secure, and intelligent experience similar to Slack. The platform leverages OAuth2 for authentication, Zustand for state management, and Socket.IO for real-time communication, delivering a stable, high-performance, and lightweight user-to-user messaging experience. Additionally, with full Dockerization across the Frontend, Backend, Database, and WebSocket Server, the system enables seamless deployment and efficient scalability.
+
 ## معرفی برنامه
 
 <p align="justify">
 وب اپلیکیشن TeamFlow یک برنامه چت آنلاین فول استک است که به‌طور خاص برای ارتباطات تیمی و شخصی بلادرنگ (Real-Time طراحی شده است. این اپلیکیشن با ترکیب فناوری‌های مدرن، تجربه‌ای سریع، امن و هوشمند مشابه Slack را برای کاربران فراهم می‌کند. این پلتفرم با استفاده از OAuth2 برای احراز هویت، Zustand برای مدیریت استیت، و Socket.IO برای ارتباط بلادرنگ، تجربه‌ای پایدار، سریع و در عین حال سبک در ارتباطات کاربر به کاربر فراهم می‌کند. همچنین، با Dockerization کامل در بخش‌های Frontend، Backend، Database و WebSocket Server، استقرار و مقیاس‌پذیری سیستم به‌صورت یکپارچه و کارآمد انجام می‌شود. 
 
+
+### AI-Powered Features (Key Strength of TeamFlow)
+
+<p align="justify">
+TeamFlow leverages DeepSeek AI to deliver key capabilities that significantly enhance team communication productivity:
+  
+   - Conversation Summarization: Generates concise summaries of long conversations.
+   - Smart Reply Suggestions: Provides relevant, context-aware response suggestions based on the flow of the conversation.
+
+  <br>
+  
 ### ویژگی هوشمند (AI Powered) ویژگی برجسته TeamFlow
 <p align="justify">
 تیم فلو با استفاده از هوش مصنوعی DeepSeek  قابلیت‌های مهمی را ارائه می‌دهد و بهره‌وری ارتباطات تیمی را به شکل چشمگیری افزایش می‌دهد:
